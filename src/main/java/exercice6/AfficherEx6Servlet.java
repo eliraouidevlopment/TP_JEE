@@ -27,6 +27,7 @@ public class AfficherEx6Servlet extends HttpServlet {
 		String payer=request.getParameter("payer");
 		String sexe=request.getParameter("sexe");
 		
+		
 		out.println("<html><body>");
 		out.println("<h1>Resume de l'inscreption</h1>");
 		out.println("<p>Nom :"+nom);

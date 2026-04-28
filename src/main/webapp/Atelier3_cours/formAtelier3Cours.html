@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulaire </title>
+</head>
+<style>
+	form{
+	border:5px black;
+	border-radius: 5px;
+	align-items:center;
+	}
+	input{
+		margin:5px;
+	}
+	select{
+		padding:3px;
+	}
+</style>
+<body>
+	<form action="../Atelier3_coursServlet"  method="post" style="width:50%; ">
+		<label for="name">Nom :</label>
+		<input type="text" id="name" name="name"> <br>
+		
+		<label for="prenom">Prenom :</label>
+		<input type="text" id="prenom" name="prenom"> <br>
+		
+		<label>Sexe :</label>
+		<input type="radio" name="sexe" value="Homme"> H <input type="radio" name="sexe" value="Femme">F <br>
+		
+		Fonction: <br>
+		
+		<select name="Fonction">
+			<option >Choisir......</option>
+			<option value="etudiant">Etudiant</option>
+			<option value="ensiegnent">Ensiengnemt</option>
+			<option value="ingenieur">Ingenieur</option>
+			<option value="retrute">Retrute</option>
+			<option value="autre choix">Autre</option>
+		</select><br>
+		
+		Loisirs :<br>
+		<input type="checkbox" name="loisir" value="lecture" >Lecture <br>
+		<input type="checkbox" name="loisir" value="sport">Sport <br>
+		<input type="checkbox" name="loisir" value="Voyege" >Voyege <br>
+		
+		Commentaire :<br>
+		<textarea rows="5" cols="3" name="commentaire"></textarea><br>
+		<input type="submit" value="envoyer">
+		
+	</form>
+</body>
+</html>
